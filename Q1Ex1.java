@@ -30,7 +30,11 @@ public class Q1Ex1 {
         double hrs3 = 1.5;
         double unit3 = 0.33;
         
-        System.out.println(subj1 + mtgs1 + hrs1 + unit1 );
+        
+        
+        System.out.println("Subject: " + subj1 + '\n' + "Meetings per Week: " + mtgs1 + '\n' + "Hours per Week: " + hrs1 + '\n' + "Subject Unit: " + unit1
+                          "Subject: " + subj2 + '\n' + "Meetings per Week: " + mtgs2 + '\n' + "Hours per Week: " + hrs2 + '\n' + "Subject Unit: " + unit2
+                          "Subject: " + subj3 + '\n' + "Meetings per Week: " + mtgs3 + '\n' + "Hours per Week: " + hrs3 + '\n' + "Subject Unit: " + unit3);
         double hrsTotal = hrs1 + hrs2 + hrs3;
         System.out.println("The subjects' combined number of hours: " + hrsTotal);
         

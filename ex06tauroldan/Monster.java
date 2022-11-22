@@ -2,13 +2,13 @@ package ex06tauroldan;
 
 import java.util.ArrayList;
 
-public class Monster {
+public abstract class Monster {
     public final String name, type, strongAgainst, weakAgainst; //variables are public
     public int maxHP, hp, xp, lvl; //variables are public
     public double atk, def; // atk and def are doubles
     private static ArrayList<Monster> monsterList = new ArrayList<>();
 
-    public Monster(String n, String t, String s, String w, int m, int base){
+    protected Monster(String n, String t, String s, String w, int m, int base){
         name = n;
         type = t;
         strongAgainst = s;
@@ -47,9 +47,7 @@ public class Monster {
         }
     }
 
-    public void special(){
-        System.out.println(name + " did a pose.");
-    }
+    public abstract void special();
 
     public void restoreHealth(){
         hp = maxHP;
